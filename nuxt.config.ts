@@ -5,4 +5,7 @@ export default defineNuxtConfig({
   tres: {
     devtools: true,
   },
+  devServer: {
+    port: 3001,
+  },
 })
