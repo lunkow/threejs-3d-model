@@ -20,20 +20,16 @@ onLoop(({ delta, elapsed }) => {
   <div>
     <!-- <NuxtWelcome /> -->
     <TresCanvas
-      clear-color="black"
+      clear-color="#4f4f4f"
       shadows
       window-size>
-      <TresPerspectiveCamera />
+      <TresPerspectiveCamera :position="[150, 0, 0]" :look-at="[0, 0, 0]"/>
       <OrbitControls />
 
-      <TresMesh 
-        ref="sphereRef"
-        :position="[0, 0, 0]"
-        cast-shadow
-        receive-shadow>
-        <TresSphereGeometry />
-        <TresMeshNormalMaterial />
-      </TresMesh>
+      <!-- Suspense needs because we use some composable that are asynchronous  -->
+      <Suspense>
+        <Model/>
+      </Suspense>
 
       <TresGridHelper />
     </TresCanvas>

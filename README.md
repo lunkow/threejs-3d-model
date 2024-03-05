@@ -13,3 +13,8 @@
 - `npm run generate` - generate static pages
 - `npm run build` - build the application for production
 - `npm run preview` - locally preview production build
+
+## Links
+
+- https://www.youtube.com/watch?v=U-6fRYfrAzU
+- https://www.youtube.com/watch?v=Se8GdHptD4A
