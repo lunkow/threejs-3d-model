@@ -1,4 +1,4 @@
-# Threejs 3D Control
+# Threejs 3D Model
 
 ## Stack
 
