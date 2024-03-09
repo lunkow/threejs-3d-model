@@ -13,7 +13,9 @@ console.log(textures)
 </script>
 
 <template>
-  <primitive :object="model" />
+  <primitive :object="model" 
+    receive-shadow
+    cast-shadow/>
 
 </template>
 
